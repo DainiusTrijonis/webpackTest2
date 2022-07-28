@@ -1,7 +1,2 @@
-$text: orange;
-$bg: black;
-
-body {
-    color: $text;
-    background-color: $bg;
-}
+@import "~bootstrap/scss/bootstrap";
+@import "./custom.scss"

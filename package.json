@@ -6,14 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
-    "start": "webpack serve --open"
+    "start": "webpack serve --config webpack.config.js  --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
     "autoprefixer": "^10.4.7",
     "bootstrap": "^5.2.0",
+    "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "style-loader": "^3.3.1"
   },

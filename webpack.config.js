@@ -1,15 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+console.log(__dirname);
 
 
 module.exports = {
     mode: "development",
     entry: {
-        index: './src/index.js',
+        index: path.resolve(__dirname,'./src/index.js'),
     },
     devtool: 'inline-source-map',
-    plugins: [ new HtmlWebpackPlugin() ],
+    plugins: [ new HtmlWebpackPlugin({ template: './public/index.html' }) ],
 
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -45,7 +45,7 @@ module.exports = {
         ],
     },
     devServer: {
-        static: './dist',
+        static: './public',
         compress: true,
         port: 9000,
       },
