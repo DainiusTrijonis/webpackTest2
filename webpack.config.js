@@ -6,7 +6,7 @@ console.log(__dirname);
 module.exports = {
     mode: "development",
     entry: {
-        index: path.resolve(__dirname,'./src/index.js'),
+        index: path.resolve(__dirname,'./src/js/index.js'),
     },
     devtool: 'inline-source-map',
     plugins: [ new HtmlWebpackPlugin({ template: './public/index.html' }) ],
